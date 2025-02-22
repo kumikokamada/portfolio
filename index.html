@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUMIKO KAMADA PORTFOLIO</title>
+
+<!-- ユキノ先生いつもありがとうございます！添削お願いします。 
+ざっくりとですがTOPページをコード書きましたが、画面を縮小した時に崩れる箇所がたくさんあります。
+px指定ではなく％でCSSの指定をしないといけないのだろうな、とは思っていますがその先が自己解決できませんでした。
+また、class名は、BEMに慣れたい！と思い、BEMを意識して書いたつもりです。おかしい箇所がありましたらご指摘お願いいたします🙇🏻‍♀️
+
+横スクロールをするのに、https://and-ha.com/coding/hybrid-scroll/　　このサイトを見ながら書いてみましたが、全くうまくできませんでした。
+
+HTMLとCSSの🟨この記号の箇所🟨、質問と見ていただきたい箇所です。
+ご確認よろしくお願いいたします！
+-->
+
+
+
+
+
+
+<!-- ▼slick読み込み 【🔴style cssの上に配置🔴】-->
+    <link
+    rel="stylesheet" 
+    type="text/css" 
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+<!-- slick css読み込み▲ -->
+
+<!-- 🟨Googleフォントの読込みは、↓ここ【resetcssの上】で合っていますか？ 🟨 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<!-- ▼ JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+<!--  JQuery ▲ -->
+
+<!-- ▼ slick のscript【🔴JQueryの下に配置🔴】 -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+<!--  slick のscript ▲-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="header__inner">
+            <!-- <h1 class="top-title">KUMIKO<br>KAMADA</h1> -->
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#home">HOME</a></li>
+                    <li class="header__nav-item"><a href="#about">ABOUT</a></li>
+                    <li class="header__nav-item"><a href="#works">WORKS</a></li>
+                    <li class="header__nav-item"><a href="#service">SERVICE</a></li>
+                    <li class="header__nav-item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <div class="main-visual">
+            <picture>
+                <source
+                srcset="Links_design/design/sp_tsuki_03_small.jpg"
+                media="(max-width:767px)"
+                />
+                <img src="./images/mv_tsuki_01.jpg" alt="月と空"
+                />
+            </picture>
+            <picture>
+                <source
+                srcset="Links_design/design/sp_tsuki_03_small.jpg"
+                media="(max-width:767px)"
+                />
+                <img src="./images/mv_nuance.jpg" alt="ニュアンス"
+                />
+            </picture>
+            <picture>
+                <source
+                srcset="Links_design/design/sp_tsuki_04_small.jpg"
+                media="(max-width: 767px)"
+                />
+                <img src="./images/mv_tsuki_02.jpg" alt="月と空"
+                />
+            </picture>
+        </div>
+        <div class="mv-maintitle">
+            <span class="mv-maintitle__name">KUMIKO<br>KAMADA</span><br>
+            <span class="mv-maintitle__sub">Web / Graphic / Video</span>
+        </div>
+
+
+
+
+
+
+
+    <section id ="first" class="wrapper">
+        <div class="read-container">
+            <div class="read-container__ja">
+                <p class="read-container__ja-01">デザインは、ただの装飾ではなく、<br>私たちの生活に深く関わるもの。</p>
+                <p class="read-container__ja-02">何気なく手に取るパッケージ。<br>心地よく目に入るタイポグラフィ。<br>使いやすく整えられたWebサイト。<br>それらすべては、日常を美しく、豊かにしてくれるデザインの力です。</p>
+                <p class="read-container__ja-03">衣食住と同じようにデザインがすぐそばにある世界を。<br>そんな想いで、私はデザインに向き合っています。</p>
+            </div>
+            <div class="read-container__en-image">
+                <picture><source srcset="./Links/about_us.jpg" media="(max-width: 767px)" />
+                <img src="./images/read_img_01.jpg" alt=""/>
+                </picture>
+                <div class="read-container__en">
+                    <p class="read-container__en-01">Design is not just decoration, it is something<br>that is deeply connected to our lives.</p>
+                    <p class="read-container__en-02">The packaging you pick up casually,<br>the typography that catches your eye,<br>the website that is easy to use,<br>All of this is the power of design that makes everyday life beautiful and enriching.</p>
+                    <p class="read-container__en-03">A world where design is right next to you, just like food, clothing, and shelter.<br>It is with this feeling that I approach design.</p>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <section id ="second" class="wrapper">
+        <div id="about">
+            <div class="about-container">
+                <h2 class="about-container__title">ABOUT</h2>
+                <p class="about-container__title-ja">私について</p>
+                <div class="about-container__inner">
+                    <img src="./images/about_img_01.jpg" alt="">
+                    <p>VIEW MORE</p>
+                </div>
+            </div>
+        </div>
+
+    <!--　▼ここから横スクロール▼　-->
+        
+        
+            <h2 class="works">WORKS</h2>
+
+
+        <div class="service-container">
+            <h2 id="service">SERVICE</h2>
+            <div class="service__inner">
+                <ul class="service__list">
+                    <li class="service__item"><a href="">Web design</a></li>
+                    <li class="service__item"><a href="">Graphic design</a></li>
+                    <li class="service__item"><a href="">Video editing</a><br>video production</li>
+                </ul>
+            </div>
+        </div>
+        
+    
+
+
+    </section>
+    <!--　▲横スクロール終了▲　-->
+
+
+
+
+    <section id ="third" class="wrapper">
+        <div class="contact-container">
+            <h2 id="contact">CONTACT</h2>
+            <div class="contact-container__main-box">
+                <p class="contact-container__introduction">KUMIKO KAMADAのサイトをご訪問いただきありがとうございます。<br>ご依頼についてやご相談、ご質問などございましたらお気軽にお問い合わせください。</p>
+            </div>
+        </div>
+
+
+
+
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer__inner"></div>
+                <span class="footer__inner--maintitle-name">KUMIKO<br>KAMADA</span><br>
+                <span class="footer__inner--maintitle-sub">Web / Graphic / Video</span><br>                
+
+            <p class="storeinfo">ABOUT WORKS SERVICR CONTACT<br>instagram X</p>
+            </div>
+            <p class="copyright">©KUMIKOKAMADA. All Rights Reserved.</p>
+        </footer>
+
+
+
+
+    </section>
+
+
+    <script>
+        // $(function (){
+            // ▼ハンバーガーメニュー
+            // $(".hamburger").click(function () {
+                // $(".hamburger").toggleClass("open");
+                // $(".header_nav-sp").fadeToggle();
+            // });
+            // ハンバーガーメニュー▲
+
+          //  スライダー↓
+            $(".main-visual").slick({
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+            });
+    </script>
+
+
+</body>
+</html>
