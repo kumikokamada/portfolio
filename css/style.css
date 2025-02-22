@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/* * { */
+	/* outline: 1px solid magenta; */
+/* }  */
+
+
+.header__inner{
+    justify-content: flex-end;
+    position: fixed; /* 追従 */
+    top: 30px; /* 画面上からの値px */
+    right: 30px;
+    z-index: 9997;
+}
+
+.top-title{
+    font-size: 20px;
+}
+
+.header__nav{
+    text-align: right;
+}
+
+.header__nav-list{
+    background-color: transparent;
+    display: flex;
+    gap: 40px;
+}
+
+.header__nav-item{
+    background-color: transparent;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+
+.mv-maintitle{
+    color: #ffffff;
+    position: absolute;
+    top: 440px; /* 画面上からの値px */
+    left: 147px; /* 画面左からの値px */
+    z-index: 9997;
+}
+
+.mv-maintitle__name{
+    font-size: 45px;
+    line-height: 1.12;
+    letter-spacing: 0.04em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px; 
+    display: inline-block;
+    /* 🟣marginで余白がとれない（効かない） >>>  display: inline-block;を指定したら効いた */
+}
+
+.mv-maintitle__sub{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+/* .read-ja{ */
+    /* margin-left: 155px; */
+/* } */
+
+.read-container{
+    /* background-color: blue; */
+    margin:210px 155px 300px 155px;
+}
+
+.read-container__ja-01{
+    font-size: 28px;
+    font-weight: 500;
+    line-height:1.6;
+    letter-spacing: 0.06em;
+    margin-bottom: 37px;
+}
+
+.read-container__ja-02{
+    font-size: 14px;
+    font-weight: 400;
+    line-height:1.85;
+    letter-spacing: 0.05em;
+    margin-bottom: 21px;
+}
+
+.read-container__ja-03{
+    font-size: 14px;
+    font-weight: 400;
+    line-height:1.85;
+    letter-spacing: 0.05em;
+    margin-bottom: 80px;
+}
+
+.read-container__en{
+    text-align: left;
+    /* margin-right: 155px; */
+}
+
+.read-container__en-01{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height:1.32;
+    margin-top:0px;
+    margin-bottom: 37px;
+}
+
+.read-container__en-02{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height:1.86;
+    margin-top:0px;
+    margin-bottom: 21px;
+}
+
+.read-container__en-03{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height:1.86;
+    margin-top:0px;
+    margin-bottom: 1137px;
+}
+
+.read-container__en-image{
+    display:flex ;
+    gap:220px;
+}
+
+.read-container__en-image img{
+    width: 300px;
+    margin-top: 150px;
+}
+
+
+#about{
+    background-color: #333333;
+}
+
+
+.about-container{
+    background-color: #333333;
+    margin:100px 155px 600px 155px;
+    display: inline-block;
+}
+
+.about-container img{
+    width: 35%;
+} 
+
+.about-container__title{
+    background-color: #333333;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom:5px;
+    padding-left: 10px ;
+    border-bottom: 1px solid #e4db80;
+}
+
+.about-container__title-ja{
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    padding-top: 5px;
+    padding-left: 10px ;
+    margin-bottom:200px ;
+}
+
+.about-container__inner{
+    display: flex;
+    gap:300px;
+}
+
+.about-container__inner p{
+    background-color: #333333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 370px;
+}
+
+
+.wrapper{
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    /* 🔺不要だったら行間消す */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper about-container{
+    color:#ffffff;
+    margin-left: 195px;
+}
+
+
+#contact{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    margin-top: 115px;
+
+}
+
+.contact-container__main-box{
+    /* text-align: center; */
+    background-color: #F3F3F1;
+    width: 1090px;
+    height:1538px;
+    margin: 0 auto;
+    margin-bottom: 300px;
+}
+
+
+.contact-container__introduction{
+    text-align: center;
+    font-size: 16px;
+    line-height:1.6;
+    margin-top: 115px;
+    margin-bottom: 115px;
+}
+
+
+/* #service{ */
+    /* width: 100%; */
+    /* padding: 600px 120px 600px 20px; */
+/* } */
+
+
+.service-container{
+    background: linear-gradient(to right, #E6DD7B 0%, #B5D9D9 100%);
+}
+/*🟨SERVICEのグラデーションの背景が反映されません🟨*/
+
+
+.service__item{
+    background-color: transparent;
+    font-size: 45px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'
+    
+}
+
+
+#footer{
+    background-color: #E8E7E3;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    color: #B4B5B4;
+}
