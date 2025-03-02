@@ -6,14 +6,27 @@ header,
 footer,
 main,
 section,
+dl
+ {
+  background-color:#FEFCFA;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: #333333;
+  font-family: "Zen Kaku Gothic New", "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+  font-weight:100;
+  font-feature-settings: "palt";
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
 ul,
-li,
-p,
-dl {
-  background-color:#FEFCFA;
+li
+p {
   margin: 0;
   padding: 0;
   line-height: 1;

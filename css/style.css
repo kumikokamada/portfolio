@@ -1,258 +1,1358 @@
 @charset "utf-8";
 
 /* * { */
-	/* outline: 1px solid magenta; */
+/* outline: 1px solid magenta; */
 /* }  */
 
 
-.header__inner{
-    justify-content: flex-end;
-    position: fixed; /* 追従 */
-    top: 30px; /* 画面上からの値px */
-    right: 30px;
-    z-index: 9997;
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  position: fixed; /* 追従 */
+  top: 30px; /* 画面上からの値px */
+  right: 2%;
+  z-index: 9997;
+  width: 95%;
+  padding-right: 20px;
 }
 
-.top-title{
-    font-size: 20px;
+.header__namelogo{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
 }
 
-.header__nav{
-    text-align: right;
+.top-title {
+  font-size: 20px;
 }
 
-.header__nav-list{
-    background-color: transparent;
-    display: flex;
-    gap: 40px;
+.header__nav {
+  text-align: right;
 }
 
-.header__nav-item{
-    background-color: transparent;
-    font-size: 16px;
-    letter-spacing: 0.025em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
+.header__nav-list {
+  background-color: transparent;
+  display: flex;
+  gap: 40px;
+}
+
+.header__nav-item {
+  background-color: transparent;
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
 }
 
 
-.mv-maintitle{
-    color: #ffffff;
-    position: absolute;
-    top: 440px; /* 画面上からの値px */
-    left: 147px; /* 画面左からの値px */
-    z-index: 9997;
+.main-visual {
+    width: 100%;
+    height: 100vh;
 }
 
-.mv-maintitle__name{
-    font-size: 45px;
-    line-height: 1.12;
-    letter-spacing: 0.04em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    margin-bottom: 20px; 
-    display: inline-block;
-    /* 🟣marginで余白がとれない（効かない） >>>  display: inline-block;を指定したら効いた */
+.main-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+.mv-maintitle {
+  color: #ffffff;
+  position: absolute;
+  top: 440px; /* 画面上からの値px */
+  left: 147px; /* 画面左からの値px */
+  z-index: 9997;
 }
 
-.mv-maintitle__sub{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
+.mv-maintitle__name {
+  font-size: 45px;
+  line-height: 1.12;
+  letter-spacing: 0.04em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  display: inline-block;
+  /* 🟣marginで余白がとれない（効かない） >>>  display: inline-block;を指定したら効いた */
 }
 
-/* .read-ja{ */
-    /* margin-left: 155px; */
+.mv-maintitle__sub {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+
+.lead-container {
+  max-width: 1130px;
+  margin: 210px auto 300px;
+}
+
+.lead-container__text-area--ja{
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+
+.lead-container__text--ja--01 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  margin-bottom: 37px;
+}
+
+.lead-container__text--ja--02 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.05em;
+  margin-bottom: 21px;
+}
+
+.lead-container__text--ja--03 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.05em;
+  margin-bottom: 80px;
+}
+
+.lead-container__text-area--en {
+  text-align: left;
+  /* margin-right: 155px; */
+}
+
+.lead-container__text--en--01 {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.32;
+  margin-top: 0px;
+  margin-bottom: 37px;
+}
+
+.lead-container__text--en--02 {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.86;
+  margin-top: 0px;
+  margin-bottom: 21px;
+}
+
+.lead-container__text--en--03 {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.86;
+  margin-top: 0px;
+  margin-bottom: 1137px;
+}
+
+.lead-container__en-image {
+  display: flex;
+  gap: 220px;
+}
+
+.lead-container__en-image img {
+  width: 300px;
+  margin-top: 150px;
+}
+
+#about {
+  background-color: #333333;
+  width: 120vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__container {
+  background-color: #333333;
+  /* margin: 100px 155px 600px 155px; */
+  display: inline-block;
+  margin-left: 13.5%;
+}
+
+.about__container img {
+  width: 35%;
+  max-width: 510px;
+}
+
+.about__title--en {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+  font-size: 40px;
+  font-weight: 300;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.about__title--en::before {
+  position: absolute;
+  content: "";
+  width: calc(15.5% + 130px);
+  height: 1px;
+  left: -15.5%;
+  bottom: 0;
+  background-color: #e6dd7b;
+}
+
+.menu__title--ja {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  padding-left: 10px;
+  margin-bottom: 200px;
+}
+
+.about__inner {
+  display: flex;
+  gap: 300px;
+}
+
+.about__inner p {
+  background-color: #333333;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 370px;
+}
+
+.life-is-image{
+  width: auto;
+  height: 100%;
+}
+
+.works__title--en{
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+}
+
+.works__title--en::before {
+  position: absolute;
+  content: "";
+  width: 53px;
+  height: 1px;
+  bottom: 0;
+  background-color: #e6dd7b;
+  display: inline-block;
+}
+
+.works__title--ja{
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.works__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3列 */
+  grid-template-rows: repeat(2, auto); /* 2行 */
+  gap: 16px; /* 作品間の間隔 */
+  overflow-x: auto; /* 横スクロール可能 */
+  scroll-snap-type: x mandatory; /* スクロール時に綺麗に止まる */
+  padding: 16px;
+  width: 100%; /* 親要素の幅いっぱい */
+  white-space: nowrap;
+}
+
+.works__wrapper {
+  display: flex;
+  gap: 24px; /* 各3×2のグループ間の余白 */
+}
+
+.works__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3列 */
+  grid-template-rows: repeat(2, auto); /* 2行 */
+  gap: 16px; /* 作品間の間隔 */
+  /* scroll-snap-align: start; スクロール時に区切りよく止まる */
+}
+
+.works__item {
+  display: flex;
+  flex-direction: column; /* 縦並び（画像→テキスト） */
+  align-items: center; /* 中央寄せ */
+  width: 200px; /* 作品の幅（調整可） */
+}
+
+.works__item img {
+  width: 360px; 
+  height: 360px;
+}
+
+.works__text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.works__name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.works__inner--item{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* 
+.works__category--LP {
+  font-size: 13px;
+  color: gray;
+} */
+
+
+  /* width: 25%; 画面幅の25% */
+  /* height: auto; 高さは自動調整 */
+  /* overflow: hidden; 画像がcontainerからはみ出さないようにする */
 /* } */
 
-.read-container{
-    /* background-color: blue; */
-    margin:210px 155px 300px 155px;
+
+/* .works-container { */
+  /* width: 100%; */
+  /* padding: 20px; */
+  /* margin:340px 450px 263px 325px; */
+/* } */
+
+/* .works-container__list { */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* gap: 20px; */
+  /* list-style: none; */
+/* } */
+
+/* .works-container__item {
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
 }
 
-.read-container__ja-01{
-    font-size: 28px;
-    font-weight: 500;
-    line-height:1.6;
-    letter-spacing: 0.06em;
-    margin-bottom: 37px;
+.works-container__item img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+/* } */ 
+
+
+/*  ------------SERVICE▼------------ */
+
+.service__container{
+  height: 100%;
+  background: linear-gradient(to right, #e6dd7b 0%, #b5d9d9 100%);
+  padding: 500px 50% 400px 50%;
 }
 
-.read-container__ja-02{
-    font-size: 14px;
-    font-weight: 400;
-    line-height:1.85;
-    letter-spacing: 0.05em;
-    margin-bottom: 21px;
+.service__image-decoration img{
+  width:677px;
+  height:auto;
 }
 
-.read-container__ja-03{
-    font-size: 14px;
-    font-weight: 400;
-    line-height:1.85;
-    letter-spacing: 0.05em;
-    margin-bottom: 80px;
-}
-
-.read-container__en{
-    text-align: left;
-    /* margin-right: 155px; */
-}
-
-.read-container__en-01{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-size: 28px;
-    line-height:1.32;
-    margin-top:0px;
-    margin-bottom: 37px;
-}
-
-.read-container__en-02{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height:1.86;
-    margin-top:0px;
-    margin-bottom: 21px;
-}
-
-.read-container__en-03{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height:1.86;
-    margin-top:0px;
-    margin-bottom: 1137px;
-}
-
-.read-container__en-image{
-    display:flex ;
-    gap:220px;
-}
-
-.read-container__en-image img{
-    width: 300px;
-    margin-top: 150px;
+.service__image-decoration p{
+  font-size: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 
-#about{
-    background-color: #333333;
+.service{
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif"; 
+    letter-spacing: 0.1em;
+}
+
+.service__title{
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* ------------SERVICE▲------------ */
+
+/* -----------▼CONTACT------------ */
+
+
+.contact-form{
+  background-color: #F3F3F1;
+  width: 75%;
+  max-width: 1090px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 11%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form__text-area{
+  max-width: 790px;
+  margin: 0 auto;
+  padding-top: 72px;
+  margin:0 11%
+}
+
+.contact-form__heading--top{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contact-form__heading--bottom{
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.required{
+  color: #C90909;
+  font-size: 14px;
+}
+
+.label-ja::before{
+  content: "/";
+  margin: 0 4px;
+  opacity: 0.8;  /* 不透明度60% */
+}
+
+.contact-form__input, .contact-form__textarea {
+  width: 27%;
+  padding: 8px;
+  margin-bottom: 10px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
+  font-size: 14px;
+}
+
+.contact-form__group{
+  width: 100%;
+}
+
+.contact-form__label-group{
+  margin-left: auto;
+}
+
+/* -----------CONTACT▲------------ */
+
+
+
+
+.wrapper {
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  /* 🔺不要だったら行間消す */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+
+.wrapper about-container {
+  color: #ffffff;
+  margin-left: 195px;
+}
+
+#contact {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  margin-top: 115px;
 }
 
 
-.about-container{
-    background-color: #333333;
-    margin:100px 155px 600px 155px;
-    display: inline-block;
+.contact__introduction {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 115px;
+  margin-bottom: 115px;
 }
-
-.about-container img{
-    width: 35%;
-} 
-
-.about-container__title{
-    background-color: #333333;
-    color: #ffffff;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
-    font-size: 40px;
-    font-weight: 300;
-    padding-bottom:5px;
-    padding-left: 10px ;
-    border-bottom: 1px solid #e4db80;
-}
-
-.about-container__title-ja{
-    background-color: #333333;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.2em;
-    padding-top: 5px;
-    padding-left: 10px ;
-    margin-bottom:200px ;
-}
-
-.about-container__inner{
-    display: flex;
-    gap:300px;
-}
-
-.about-container__inner p{
-    background-color: #333333;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    color: #ffffff;
-    margin-top: 370px;
-}
-
-
-.wrapper{
-    font-size: 40px;
-    letter-spacing: 0.05em;
-    /* 🔺不要だったら行間消す */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-}
-
-.wrapper about-container{
-    color:#ffffff;
-    margin-left: 195px;
-}
-
-
-#contact{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: 90px;
-    font-weight: 400;
-    margin-top: 115px;
-
-}
-
-.contact-container__main-box{
-    /* text-align: center; */
-    background-color: #F3F3F1;
-    width: 1090px;
-    height:1538px;
-    margin: 0 auto;
-    margin-bottom: 300px;
-}
-
-
-.contact-container__introduction{
-    text-align: center;
-    font-size: 16px;
-    line-height:1.6;
-    margin-top: 115px;
-    margin-bottom: 115px;
-}
-
 
 /* #service{ */
-    /* width: 100%; */
-    /* padding: 600px 120px 600px 20px; */
+/* width: 100%; */
+/* padding: 600px 120px 600px 20px; */
 /* } */
 
-
-.service-container{
-    background: linear-gradient(to right, #E6DD7B 0%, #B5D9D9 100%);
-}
-/*🟨SERVICEのグラデーションの背景が反映されません🟨*/
-
-
-.service__item{
-    background-color: transparent;
-    font-size: 45px;
-    font-weight: 400;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'
-    
+.service-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #e6dd7b 0%, #b5d9d9 100%);
+  padding: 500px 50% 400px 50%;
 }
 
 
-#footer{
-    background-color: #E8E7E3;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
-    color: #B4B5B4;
+#footer {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+  "sans-serif";
+  background-color: #e8e7e3;
+  color: #b4b5b4;
 }
+
+.footer__container{
+  width: 440px;
+  margin-left: 70px;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.footer__allmenu-list,.footer__sns-list{
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+  "sans-serif";
+  display: flex;
+  gap: 25px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #b4b5b4;
+  letter-spacing: 0em;
+}
+
+.footer__all-menu--list{
+  display: flex;
+  padding-bottom: 3px;
+  /* border-bottom: 2px solid #b4b5b4; */
+  margin-bottom: 3px;
+  letter-spacing: 0em;
+}
+
+.footer__sns-list{
+  /* margin-top: 25px; */
+  letter-spacing: 0em;
+}
+
+.footer__main-title--name{
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.footer__main-title--sub{
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-bottom: 55px;
+}
+
+.footer__all-menu {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer__about-link, .footer__works-link,.footer__service-link,.footer__contact-link{
+  color: #333333;
+}
+
+.footer__copyright{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  width: 440px;
+  margin-left:70px;
+  padding-bottom: 70px;
+}
+
+
+
+/* ▼横スクロール */
+
+.scroll_container {
+  height: 400vh;
+}
+
+.horizontal_scroll {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  /* width: 400vw; 横幅をデバイス画面×3最大にする */
+  width: max-content;  /* 横幅を最大にする */
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll_contents {
+  height: 100%;
+  width: 100vw;
+}
+
+.sticky_wrap {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+/* 横スクロール▲ */
+
+
+/* --------▼2階層目 ABOUT--------*/
+
+.about-page__container{
+  width: 91%;
+  display: block;
+  margin-left: auto;
+}
+
+.page__title{
+  font-size: 90px;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+  margin-top: 215px;
+  margin-bottom: 133px;
+  text-align: center;
+}
+
+.about-page__inner{
+  display: flex;
+  gap: 110px;
+  margin: 120px 10% 165px 10%;
+}
+
+.about-page__img{
+  margin-top: 80px;
+}
+
+.about-page__name--en{
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  margin-bottom: 10px;
+}
+
+.about-page__name--ja{
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-bottom: 45px;
+}
+
+
+.about-page__text p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+  /* margin-bottom: 10px; */
+}
+
+.about-page__text--01{
+  margin-bottom: 10px;
+}
+
+.about-page__text--02{
+  margin-bottom: 20px;
+}
+
+.about-page__text--03{
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  margin-bottom: 10px;
+}
+
+.about-page__like-img{
+  width: 74%;
+  height: auto;
+  padding-bottom: 115px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-page__like-boxline{
+  position: relative;
+  top: 315px;
+  margin: 0 auto;
+  border-radius: 9999px;
+  width: 69%;
+  height: 470px;
+  color: #8D9FC7;
+  padding-top: 100px;
+  border: 3px solid #8D9FC7;
+}
+
+.about-page__like-text{
+  width: 81%;
+  padding: 40px 14% 40px 14%;
+  margin-bottom: 235px;
+  background-color: #8D9FC7;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 300px;
+}
+
+.about-page__like-text p{
+  color: #ffffff;
+  background-color: transparent;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-page__like-text--01{
+  margin-bottom: 10px;
+}
+
+
+#moonandsun h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-size: 130px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.07;
+  padding-top:80px;
+  /* margin-bottom: 10px; */
+}
+
+.moonandsun__slider{
+  background-color: #F2F2F2;
+  height: 1080px;
+  margin: 0 calc(50% - 50vw);
+  padding: 0 calc(50vw - 50%);
+  margin-top: 100px;
+}
+/*🟨↑グレーの背景のheight指定の仕方が、おかしい気がします🟨*/
+
+.moonandsun__slider-heading-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.moonandsun__slider-img--01{
+  width: 310px;
+  height: 310px;
+  display: block;
+  text-align: right;
+}
+
+.moonandsun__slider-img--02{
+  width: 310px;
+  height: 310px;
+  display: block;
+  text-align: right;
+  padding-top: 80px;
+}
+
+.moonandsun__slider-item-heading--02{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.1em;
+  text-align: right;
+  padding-right: 5%;
+  padding-bottom: 29%;
+  margin-top: 145px;
+
+}
+
+
+.moonandsun__slider-main-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 5%;
+  align-items: center;
+}
+
+.moonandsun__slider-main-item p{
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  line-height: 1.85;
+}
+
+
+#thoughts {
+  background-image: url('./images/life_is_02.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.thoughts-container {
+  max-width: 1130px;
+  margin: 210px auto 300px;
+  max-width: 1136px;
+}
+
+
+.thoughts-container__read {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.thoughts-container__text-ja-01{
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  margin-bottom: 37px;  
+}
+
+.thoughts-container__text-ja-02{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.05em;
+  margin-bottom: 21px;
+}
+
+.thoughts-container__text-ja-03{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.05em;
+  margin-bottom: 80px;
+}
+
+.thoughts-container__text-en-01{
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+  sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.32;
+  margin-top: 0px;
+  margin-bottom: 37px;
+}
+
+.thoughts-container__text-en-02{
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+  sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.86;
+  margin-top: 0px;
+  margin-bottom: 21px;
+}
+
+.thoughts-container__text-en-03{
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+  sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.86;
+  margin-top: 0px;
+  margin-bottom: 1137px;
+}
+
+.thoughts-container__text-en {
+  text-align: left;
+  margin-top: 340px;
+}
+
+.thoughts-container__message-text p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.07em;
+  margin-bottom: 10px;
+}
+
+.thoughts-container__message-img{
+  width: 36%;
+  height: auto;
+} 
+
+.thoughts-container__message{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1136px;
+}
+
+
+
+/* -------------▼二階層目 WORKS　制作実績　------------- */
+
+/*-----▼グリッドレイアウト----- */
+
+
+
+.works-lineup__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2カラム */
+  gap: 80px; 
+  max-width: 970px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.works-lineup__item img {
+  width: 100%;
+}
+
+.works-lineup__item img {
+  transition: transform 0.5s ease; /* なめらかに動かす */
+}
+
+.works-lineup__item:hover img {
+  transform: scale(0.95); /* 90%に縮小 */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* 軽い影をつける */
+}
+
+.works-lineup__img-wrapper {
+  position: relative; /* 大事！！！！浮かせる！ */
+  display: inline-block;
+  overflow: hidden; /* はみ出た部分を隠す */ 
+}
+
+.works-lineup__img-wrapper::before {
+  content: ""; /* ;擬似要素を作成 */ 
+  position: absolute; /* 親要素（.works__item）を基準に配置 */ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* 最初は透明 */ 
+  transition: background 0.3s ease, transform 0.3s ease;  /* なめらかに変化 */ 
+  z-index: 1;
+}
+
+.works-lineup__img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 0;
+  /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 🔹 影を追加 */
+}
+
+.works-lineup__item:hover .works-lineup__img-wrapper img,
+.works-lineup__item:hover .works-lineup__img-wrapper::before {
+  transform: scale(0.95); /* 95%に縮小 */
+}
+
+/* .works__item:hover .works__img-wrapper img { */
+  /* box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); 🔹 ホバー時の影を少し強く */
+/* } */
+
+.works-lineup__item:hover .works-lineup__img-wrapper::before {
+  background: rgba(0, 0, 0, 0.4); /* ホバー時に黒い半透明 */
+}
+
+.works-lineup__item--empty {
+  visibility: hidden; /* 空白として扱う */
+}
+
+.works-lineup__inner--item{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.works-lineup__name{ /* 🟥かぶり？ */
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.works__category{
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5.5px 11px;
+  background-color: #E4DB80;
+}
+
+.works-lineup__item--empty {
+  display: none;
+  }
+
+/* -----グリッドレイアウト▲----- */
+
+
+
+/* ----▼WORKSの背景グリッド線---- */
+
+#works-list {
+  position: relative;
+  justify-content: center;
+}
+
+#works-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 1440px; /* アートボードサイズ */
+  transform: translateX(-50%);
+  background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px), /* 左の線 */
+      linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px), /* 中央の線 */
+      linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px), /* 右の線 */
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px); /* 横線 */
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 90px;
+  background-position: -485px 0, 0 0, 485px 0, 0 0;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat-y;
+  pointer-events: none;
+}
+
+/* ----WORKSの背景グリッド線▲---- */
+
+.play-triangle {
+  position: relative;
+  top: 0px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid #333333;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.video-icon {
+  position: relative;
+  top: 17px;
+  right: 28px;
+  width: 22px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #333333;
+  border-radius: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.works__video--list {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 22px;
+  padding-left: 32px;
+  text-align: left;
+}
+
+.works-list__video-text{
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 22px;
+  padding-left: 32px;
+  text-align: left;
+}
+
+/* -------------二階層目 WORKS　制作実績▲　------------- */
+
+/* -------------▼三階層目 WORKS02 制作実績------------ */
+
+
+.works-detail__page{
+  background-image: url('../images/grid_background_img.jpg');
+  background-size: cover;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+.works-detail__img_container{
+  margin-left: 23%;
+  margin-right: 23%;
+  margin:0 auto;
+}
+
+.works-detail__image{
+  max-width: 530px;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+}
+
+.works-detail__main-block{
+  width: 760px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.works-detail__contents{
+  background-color: #ffffff;
+  width: 760px;
+  height: 890px;
+  margin: 0 auto;
+  margin-top:80px;
+}
+
+.works-detail__service-title {
+  padding-top: 97px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* 🟨↑↑↑↑検証ツールでみると、余白がおかしい。どこでついたかわからないmargin-top,margin-bottomがあります🟨 */
+
+.works-detail__project-title{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 58px;
+  margin-bottom: 90px;
+}
+
+.works-detail__inner{
+  font-weight: 400;
+  display: flex;
+  text-align: left;
+  align-items: flex-end;
+  width: 500px;
+  margin:0 auto;
+  padding-top:50px;
+  padding-bottom:6px;
+  padding-left: 4px;
+  border-bottom: 1px solid #BCBCBC;
+}
+
+.works-detail__list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.works-detail__item{
+  font-size: 16px;
+  font-weight: 400;
+  width: 170px;
+}
+
+.works-detail__item--name{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.works-image-container {
+    margin-top: 140px;
+    width: 100%;
+}
+
+.works-image-wrapper {
+    display: flex;
+    gap: 62px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.works-image-inner {
+    display: flex;
+    gap: 15px;
+}
+
+.works-image--pc {
+    width: 610px;
+    height: auto;
+}
+
+.works-image--sp {
+    width: 170px;
+    height: auto;
+}
+
+
+
+/* -------------三階層目 WORKS詳細▲----------- */
+
+
+/* -------------▼二階層目 SERVICE サービスラインナップ------------ */
+
+
+.service-lineup__container{
+  max-width: 82%;
+}
+
+.service-lineup__image{
+  width: 630px;
+  height: auto;
+}
+
+.service-lineup__contents{
+  display: flex;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  padding: 90px 0px 90px 50px;
+}
+
+.service-lineup__info{
+  display: flex;
+  flex-direction: column;
+}
+
+.service-lineup__description{
+  /* text-align: left; */
+  margin-top: auto;
+}
+
+.service-lineup__menu-furigana--web{
+  font-family: "Zen Kaku Gothic New", "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+  "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+  "ＭＳ 明朝", serif;
+  color:#E8E07F;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.service-lineup__menu-title--web{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color:#E8E07F;
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: 0.025em;
+}
+
+
+.service-lineup__menu-furigana--graphic{
+  font-family: "Zen Kaku Gothic New", "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+  "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+  "ＭＳ 明朝", serif;
+  color:#BDD9D8;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  display: block;
+}
+
+.service-lineup__menu-title--graphic{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color:#BDD9D8;
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: 0.025em;
+}
+
+.service-lineup__menu-furigana--coding{
+  font-family: "Zen Kaku Gothic New", "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+  "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+  "ＭＳ 明朝", serif;
+  color:#8D9FC7;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  display: block;
+}
+
+.service-lineup__menu-title--coding{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color:#8D9FC7;
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: 0.025em;
+} 
+
+.service-lineup__menu-furigana--video{
+  font-family: "Zen Kaku Gothic New", "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3", 
+  "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+  "ＭＳ 明朝", serif;
+  color:#F2B0B2;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  display: block;
+}
+
+.service-lineup__menu-title--video{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color:#F2B0B2;
+  font-size: 69px;
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: 0.025em;
+} 
+
+.service-lineup__detail-tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-lineup__detail-tool-item {
+  position: relative;
+}
+ /* 各リストアイテムの後ろにスラッシュを追加 */
+.service-lineup__detail-tool-item::after {
+  content: " /";
+  color: #666; /* スラッシュの色 */
+}
+  
+  /* 最後のアイテムのスラッシュを消す */
+.service-lineup__detail-tool-item:last-child::after {
+  content: "";
+}
+
+
+
+
+
+/* ----コンタクトフォームテスト中--- */
+
+.contact-form__label {
+  font-size:14px;
+  display: block;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.contact-container__main-box
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .works__grid {
+    grid-template-columns: 1fr; /* 1カラムに変更 */
+    gap: 40px; /* スマホ表示時はギャップを小さく */
+  }
+}
+
+
+
