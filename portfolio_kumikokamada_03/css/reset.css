@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* リセット */
+html, body, header, footer, main, section, dl {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fefcfa;
+  color: #333333;
+  font-weight: 100;
+  line-height: 1;
+  font-family: "Zen Kaku Gothic New", "A1 Mincho", "游明朝", YuMincho,
+  "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN",
+  "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+  font-feature-settings: "palt";
+}
+
+h1, h2, h3, ul,p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333333;
+  font-weight: 100;
+  line-height: 1;
+  font-family: "Zen Kaku Gothic New", "A1 Mincho", "游明朝", YuMincho,
+  "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN",
+  "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-feature-settings: "palt";
+}
+
+
+h1, h2, h3,li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  font-feature-settings: "palt";
+}
+
+
+
+
+
+
+
+
+a {
+  /*色を消す*/
+  color: inherit;
+  /*下線を消す*/
+  text-decoration: none;
+  transition: .3s;
+}
+a:hover {
+  opacity: .7;
+}
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  border: none;
+  vertical-align: bottom;
+}
+
+div {
+  box-sizing: border-box;
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KUMIKO KAMADA PORTFOLIO</title>
+    <!-- ▼slick読み込み 【🔴style cssの上に配置🔴】-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- slick css読み込み▲ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style 2.css" />
+  </head>
+
+  <body>
+    <header class="header00">
+      <div class="header00">
+        <div class="header__inner">
+          <h1 class="header__namelogo"><a href="#home"></a></h1>
+            <nav class="header__nav">
+            <ul class="header__nav-list">
+          <!-- <li class="current"><a href="#home" data-hover="home"></a></li> -->
+            <li class="header00__nav-item"><a href="./index 2.html" data-hover="home">HOME</a></li>
+            <li class="header00__nav-item"><a href="./about.html" data-hover="about">ABOUT</a></li>
+            <li class="header00__nav-item"><a href="./works.html" data-hover="works">WORKS</a></li>
+            <li class="header00__nav-item"><a href="./service.html" data-hover="services">SERVICE</a></li>
+            <li class="header00__nav-item"><a href="#contact" data-hover="contact">CONTACT</a></li>
+            </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- <header id="header">
+      <div class="header__inner">
+        <h1 class="header__namelogo"><a href="#home"></a></h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#home">HOME</a></li>
+            <li class="header__nav-item"><a href="./about.html">ABOUT</a></li>
+            <li class="header__nav-item"><a href="./works.html">WORKS</a></li>
+            <li class="header__nav-item">
+              <a href="./service.html">SERVICE</a>
+            </li>
+            <li class="header__nav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> -->
+  <feader>
+    <div class="hamburger-pc">
+      <span class="hamburger-pc--open">MENU</span>
+      <span class="hamburger-pc--close">CLOSE</span>
+    </div>
+    <nav class="header__nav--pc">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="./index.html">HOME</a></li>
+        <li class="header__nav-item"><a href="./about.html">ABOUT</a></li>
+        <li class="header__nav-item"><a href="./works.html">WORKS</a></li>
+        <li class="header__nav-item"><a href="./service.html">SERVICE</a></li>
+        <li class="header__nav-item"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger-sp">
+      <span></span>
+    </div>
+    <nav class="header__nav--sp">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="./index.html">HOME</a></li>
+        <li class="header__nav-item"><a href="./about.html">ABOUT</a></li>
+        <li class="header__nav-item"><a href="./works.html">WORKS</a></li>
+        <li class="header__nav-item"><a href="./service.html">SERVICE</a></li>
+        <li class="header__nav-item"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+    <div class="main-visual-area">
+      <div class="main-visual__tsuki">
+        <img src="./images/tsuki.gif" alt="月の動画" />
+      </div>
+      <div class="mv-maintitle">
+        <span class="mv-maintitle__name">KUMIKO<br />KAMADA</span><br />
+        <span class="mv-maintitle__sub">Web / Graphic / Video</span>
+      </div>
+      <div class="main-visual">
+        <picture>
+          <source
+            srcset="images/mv_tsuki_sp_01.jpg"
+            media="(max-width:767px)"
+          />
+          <img src="./images/mv_tsuki_01.jpg" alt="月と空" />
+        </picture>
+        <picture>
+          <source
+            srcset="Links_design/design/sp_tsuki_03_small.jpg"
+            media="(max-width:767px)"
+          />
+          <img src="./images/mv_nuance.jpg" alt="ニュアンス" />
+        </picture>
+        <picture>
+          <source
+            srcset="images/mv_tsuki_sp_02.jpg"
+            media="(max-width: 767px)"
+          />
+          <img src="./images/mv_tsuki_02.jpg" alt="月と空" />
+        </picture>
+      </div>
+    </div>
+
+    <section id="first" class="wrapper">
+      <div class="lead-container">
+        <div class="lead-container__text-area--ja">
+          <p class="lead-container__text--ja--01 lead-container__text--ja">
+            デザインは、ただの装飾ではなく、<br />私たちの生活に深く関わるもの。
+          </p>
+          <p class="lead-container__text--ja--02 lead-container__text--ja">
+            何気なく手に取るパッケージ。<br />心地よく目に入るタイポグラフィ。<br />使いやすく整えられたWebサイト。<br />それらすべては、日常を美しく、豊かにしてくれるデザインの力です。
+          </p>
+          <p class="lead-container__text--ja--03 lead-container__text--ja">
+            衣食住と同じようにデザインがすぐそばにある世界を。<br />そんな想いで、私はデザインに向き合っています。
+          </p>
+        </div>
+        <div class="lead-container__en-image">
+          <picture
+            ><source srcset="./Links/about_us.jpg" media="(max-width: 767px)" />
+            <img src="./images/read_img_01.jpg" alt="" />
+          </picture>
+          <div class="lead-container__text-area--en">
+            <p class="lead-container__text--en--01">
+              Design is not just decoration, it is something<br />that is deeply
+              connected to our lives.
+            </p>
+            <p class="lead-container__text--en--02">
+              The packaging you pick up casually,<br />the typography that
+              catches your eye,<br />the website that is easy to use,<br />All
+              of this is the power of design that makes everyday life beautiful
+              and enriching.
+            </p>
+            <p class="lead-container__text--en--03">
+              A world where design is right next to you, just like food,
+              clothing, and shelter.<br />It is with this feeling that I
+              approach design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="circle-area">
+      <div class="circle-wrapper">
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <section id="second" class="wrapper scroll_container">
+      <div class="sticky_wrap">
+        <div class="horizontal_scroll">
+          <!--　▼ここから横スクロール▼　-->
+          <div id="about" class="scroll_contents">
+            <div class="about__container">
+              <h2 class="about__title--en">ABOUT</h2>
+              <p class="about__title--ja menu__title--ja">私について</p>
+              <div class="about__inner">
+                <img src="./images/about_img_01.jpg" alt="" />
+                <p class=about__text>当ポートフォリをサイトにご訪問いただきありがとうございます！誰よりもお客様目線で。お客様の想いに寄り添ったデザイン、提案をお届けいたします。</p>
+                <div class="button-wrapper">
+                  <a href="./about.html" class="button button--more"><span class="button--more-line"></span>VIEW MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="life-is-container scroll_contents">
+            <img
+              class="life-is-image"
+              src="./images/life_is.jpg"
+              alt="ライフイズ"
+            />
+          </div>
+          <section id="works" class="wrapper scroll_contents">
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__title">
+              <h2 class="works__title--en menu__title--en">WORKS</h2>
+              <p class="works__title--ja menu__title--ja">制作実績</p>
+            </div>
+            <div class="works__item">
+              <div class="works__item-inner">
+                <img
+                  src="./images/works_workers_01.jpg"
+                  alt="会員制コワーキングの自主制作LP"
+                />
+                <div class="works-lineup__inner--item">
+                  <span class="works__name">会員制コワーキング</span>
+                  <span class="works__category">LP制作</span>
+                </div>
+              </div>
+            </div>
+            <div class="works__item">
+              <div class="works__item-inner">
+                <img
+                  src="./images/works_life_01.jpg"
+                  alt="美容院Lifeの自主制作LP（ナチュラルで洗練されたデザイン"
+                />
+                <div class="works-lineup__inner--item">
+                  <span class="works__name">美容サロン</span>
+                  <span class="works__category">LP制作</span>
+                </div>
+              </div>
+            </div>
+            <div class="works__item">
+              <div class="works__item-inner">
+                <img
+                  src="./images/works_designcafe_01.jpg"
+                  alt="カフェの自主制作LP"
+                />
+                <div class="works-lineup__inner--item">
+                  <span class="works__name">コーヒーショップ</span>
+                  <span class="works__category">LP制作</span>
+                </div>
+              </div>
+            </div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item">
+              <div class="works__item-inner">
+                <img
+                  src="./images/works_trrrrip_banner_01.jpg"
+                  alt="旅行ポータルサイトのWeb広告"
+                />
+                <div class="works-lineup__inner--item">
+                  <span class="works__name">旅行ポータルサイトW</span>
+                  <span class="works__category">バナー制作</span>
+                </div>
+              </div>
+            </div>
+            <div class="works__item">
+              <div class="works__item-inner">
+                <img src="./images/this-website.jpg" alt="作品" />
+                <div class="works-lineup__inner--item">
+                  <span class="works__name">ポートフォリオサイト</span>
+                  <span class="works__category">Webサイト制作</span>
+                </div>
+              </div>
+            </div>
+            <div class="works__item">
+              <div class="works__item-inner">
+                <img
+                  src="./images/works_deluxeburger_01.jpg"
+                  alt="ファストフードショップSNS広告"
+                />
+                <div class="works-lineup__inner--item">
+                  <span class="works__name">ファストフードショップSNS広告</span>
+                  <span class="works__category">バナー制作</span>
+                </div>
+              </div>
+            </div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+            <div class="works__item works__item-empty"></div>
+          </section>
+
+          <div class="service__container scroll_contents">
+            <div class="service__image-decoration">
+              <img src="./images/service_deco_img.jpg" alt="" />
+              <p class="decoration__text">
+                I was excited to create this website.<br />I hope you'll be
+                excited to look at it too.
+              </p>
+            </div>
+            <div class="service__area">
+              <div class="service__area-title">
+                <h2 id="service" class="service service__tittle--en">
+                  SERVICE
+                </h2>
+                <p class="service__tittle--ja">サービス一覧</p>
+              </div>
+              <h3 class="service__menu-title service__menu-title--web">
+                <a href="./service.html" class="btn btn--arrow"
+                  ><span class="btn--arrow--line"></span>Web design</a
+                >
+              </h3>
+              <h3 class="service__menu-title service__menu-title--graphic">
+                <a href="./service.html" class="btn btn--arrow"
+                  ><span class="btn--arrow--line"></span>Graphic design</a
+                >
+              </h3>
+              <h3 class="service__menu-title service__menu-title--video">
+                <a href="./service.html" class="btn btn--arrow--video"
+                  ><span class="btn--arrow--line--video"></span><p class="service__menu-title--video">Video production<br/>Video editing</p></a>
+              </h3>
+              <img
+                class="service__menu-img"
+                src="./images/service_img_concrete.jpg"
+                alt="コンクリートの装飾背景"
+              />
+            </div>
+          </div>
+          <div class="decoration-area-container scroll_container">
+            <div class="decoration-area-container decoration-area--01">
+              <p class="decoration-area__text--01">Design is not just decoration,it is something<br>
+                that is deeply connected to our lives.
+              </p>
+            </div>
+
+            <div class="decoration-area-container decoration-area--02">
+              <div class="scroll_down" id="type02">
+                <a href="#">Scroll</a>
+              </div>
+
+              <p class="decoration-area__text--02">Design is not just decoration,it is something<br>
+                that is deeply connected to our lives.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--　▲横スクロール終了▲　-->
+
+    <section id="third" class="wrapper">
+      <h2 id="contact">CONTACT</h2>
+      <div class="contact-container">
+        <p class="contact__introduction">
+          KUMIKO KAMADAのサイトをご訪問いただきありがとうございます。<br />ご依頼についてやご相談、ご質問などございましたらお気軽にお問い合わせください。
+        </p>
+        <div class="contact-form">
+          <div class="contact-form__text-area">
+            <h3 class="contact-form__heading--top">Customer information</h3>
+            <div class="contact-form__heading--bottom">
+              <p class="contact-form__heading--left">お客様情報</p>
+              <p class="contact__heading--right">
+                <span class="required">※</span>必須項目
+              </p>
+            </div>
+
+            <div class="contact-form__label-group">
+              <div class="contact-form__name-field">
+                <label class="contact-form__label" for="name"
+                  ><span class="name-en label-en">Name</span
+                  ><span class="name-ja label-ja">名前</span
+                  ><span class="required">※</span></label
+                >
+              </div>
+            </div>
+
+            <div class="contact-form__group">
+              <div class="contact-form__input-group">
+                <input
+                  class="contact-form__input"
+                  type="text"
+                  id="first-name"
+                  name="name"
+                  required
+                  placeholder="姓"
+                />
+                <input
+                  class="contact-form__input"
+                  type="text"
+                  id="last-name"
+                  name="name"
+                  required
+                  placeholder="名"
+                />
+              </div>
+            </div>
+
+            <div class="contact-form__label-group">
+              <div class="contact-form__name-field">
+                <label class="contact-form__label" for="name"
+                  ><span class="hurigana-en label-en">Furigana</span
+                  ><span class="furigana-ja label-ja">フリガナ</span
+                  ><span class="required">※</span></label
+                >
+              </div>
+            </div>
+
+            <div class="contact-form__group">
+              <div class="contact-form__input-group">
+                <input
+                  class="contact-form__input"
+                  type="text"
+                  id="first-name-kana"
+                  name="name"
+                  required
+                  placeholder="セイ"
+                />
+                <input
+                  class="contact-form__input"
+                  type="text"
+                  id="last-name-kana"
+                  name="name"
+                  required
+                  placeholder="メイ"
+                />
+              </div>
+            </div>
+
+            <div class="contact-form__label-group">
+              <label class="contact-form__label" for="email"
+                ><span class="mail-en label-en">Mail address</span
+                ><span class="mail-ja label-ja">メールアドレス</span
+                ><span class="required">※</span></label
+              >
+            </div>
+            <div class="contact-form__group">
+              <div class="contact-form__input-group">
+                <input
+                  class="contact-form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer__container">
+        <div class="footer__maintitle">
+          <div class="footer__main-title--name">KUMIKO<br />KAMADA</div>
+          <div class="footer__main-title--sub">Web / Graphic / Video</div>
+        </div>
+        <div class="footer__allmenu">
+          <ul class="footer__allmenu-list">
+            <li class="footer__all-menu-item">
+              <a href="#about2" class="footer__about-link">ABOUT</a>
+            </li>
+            <li class="footer__all-menu-item">
+              <a href="./works.html">WORKS</a>
+            </li>
+            <li class="footer__allmenu-item">
+              <a href="./service.html">SERVICE</a>
+            </li>
+            <li class="footer__allmenu-item">
+              <a href="./contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="footer__sns-list">
+            <li class="footer__sns-item">
+              <a href="https://www.instagram.com//"> Instagram </a>
+            </li>
+            <li class="footer__sns-item">
+              <a href="https://x.com/"> X </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">©KUMIKOKAMADA. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ▼ JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- ▼ slick のscript【🔴JQueryの下に配置🔴】 -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- ▼ script -->
+    <script src="./js/sciprt.js"></script>
+  </body>
+</html>
